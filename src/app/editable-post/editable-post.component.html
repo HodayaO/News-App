@@ -1,0 +1,21 @@
+<div>
+    
+    <label for="id">Post Id: </label>
+    <input disabled="true" id="id"   [(ngModel)]="post.id" placeholder="id" #id />
+
+    <label for="Title">Title: </label>
+        <input id="title"  [(ngModel)]="post.title" placeholder="title" #title />
+
+        <label for="body">body: </label>
+        <input id="body"  [(ngModel)]="post.body" placeholder="body"  #body />
+
+        <label for="createdBy">createdBy: </label>
+        <input id="createdBy"  [(ngModel)]="post.createdBy" placeholder="createdBy"  #createdBy />
+
+        <label for="createdDate">createdDate: </label>
+        <input id="createdDate"  [(ngModel)]="post.createdDate" placeholder="createdDate" #createdDate />
+    
+        <button class="add-button" (click)="save();">
+            save !
+           </button>
+</div>

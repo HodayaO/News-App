@@ -1,0 +1,6 @@
+<div *ngIf="posts" class="row ">
+    <div *ngFor="let post of filteredPosts" class="col-lg-2">
+        <app-post [post]=post></app-post>
+    </div>
+</div>
+<button  class="btn btn-info" (click)="add();">Add Your Own Post</button>

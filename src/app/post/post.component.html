@@ -1,0 +1,14 @@
+<div *ngIf="post" (click)="edit();" id="postDiv">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{post.id}} - {{post.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Creaated By {{post.createdBy}}</h6>
+          <p class="card-text">{{post.body}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">Creaated Date {{post.createdDate}}</h6>
+          <a href="#" class="card-link" (click)="delete();">Delete</a>
+            - 
+          <a href="#" class="card-link" (click)="edit();">Edit</a>
+        </div>
+      </div>
+</div>
+
